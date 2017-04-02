@@ -1,0 +1,23 @@
+using System;
+
+namespace OOPs
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WOL wol = new WOL();
+            if(wol.Wake("0011321D5D1F"))
+            {
+                Console.WriteLine("All ok");
+            }
+            else
+            {
+                Console.WriteLine("Something is wrong");
+            }
+
+            Console.Read();
+        }
+  
+    }
+}
